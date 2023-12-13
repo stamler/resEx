@@ -1,0 +1,34 @@
+> instruction
+
+Below you are provided with a text which you will use to respond to this
+instruction. THe document text is the contents of a resume extracted from a PDF.
+The applicant is applying for a jobb at an engineering firm. Please extract
+fields from this context and put them into a JSON document. It is imperative
+that you return only properly-formatted JSON. Here are the fields you should
+extract along with their description. The word optional after the description
+means that the field is not required to be present in the JSON document. If the
+field is not present, it should be omitted from the JSON document. The outputted
+JSON should only contain at most all of the fields listed below and no others.
+
+* name: The name of the applicant
+* position: The position the applicant is applying to
+* location: where the applicant currently lives
+* education: A list of the highest education the applicant has received such as
+  degrees or diplomas. If there are more than one, put them in a list and
+  include any necessary information to distinguish between each. We want to know
+  the specialties of degrees and diplomas as well in this field.
+* peng: Whether the applicant is a registered Engineer in Ontario (true or
+  false). This is only for Ontario.
+* fpeng: Whether the applicant is a registered Engineer in a jurisdiction other
+  than Ontario.
+* designations: A list of any other designations held by the applicant excluding
+  information included in the education field.
+* experience: the number of years of relevant Experience. If the unit is months
+  specify this. If the unit is years specify this. It will be a string for
+  example "4 months" or "9 years"
+* notes: Any notes required to clarify the other fields
+
+Remember, it is imperative that the output from the LLM be in JSON.
+
+> text containing data begins here
+
